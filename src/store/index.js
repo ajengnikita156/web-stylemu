@@ -5,6 +5,8 @@ import kategori from "./modules/kategori";
 import product from "./modules/product";
 import user from "./modules/user";
 import keranjang from "./modules/keranjang";
+import order from "./modules/order";
+
 
 const store = createStore({
   state: {
@@ -17,6 +19,7 @@ const store = createStore({
     product,
     user,
     keranjang,
+    order
   },
 });
 

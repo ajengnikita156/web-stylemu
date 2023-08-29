@@ -4,7 +4,7 @@ const auth = {
   namespaced: true,
   state: {
     token: localStorage.getItem('token') || '',
-    user: JSON.parse(localStorage.getItem("user")) || null,
+    // user: JSON.parse(localStorage.getItem("user")) || null,
   },
   getters: {
     isAuthenticated: (state) => !!state.token,
@@ -18,14 +18,15 @@ const auth = {
           credentials
         );
         const token = response.data.access_token;
-        const user = response.data.user;
+        // const user = response.data.user;
 
         // Save token to localStorage
         localStorage.setItem('token', token);
-        localStorage.setItem("user", JSON.stringify(user));
+        // localStorage.setItem("user", JSON.stringify(user));
 
         commit('SET_TOKEN', token);
         console.log("token saved:", token);
+        alert("Berhasil Login!!")
         return true;
       } catch (error) {
         console.error(error);
@@ -47,10 +48,29 @@ const auth = {
 
         commit('SET_TOKEN', token);
         console.log("token saved:", token);
+        
         return true;
       } catch (error) {
         console.error(error);
         return false;
+      }
+
+    },
+
+    async getUserAddress({ state }) {
+      try {
+        const response = await axios.get(
+          "https://ecommerce.olipiskandar.com/api/v1/user/addresses",
+          {
+            headers: {
+              Authorization: `Bearer ${state.token}`,
+            },
+          }
+        );
+        return response.data;
+      } catch (error) {
+        console.error(error);
+        return null;
       }
     },
     logout({ commit }) {

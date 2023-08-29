@@ -4,6 +4,7 @@ const produk = {
   namespaced: true,
   state: {
     produkData: [],
+    keranjang: [],
   },
   getters: {
     getProduk: (state) => state.produkData,
@@ -38,6 +39,10 @@ const produk = {
             console.log(error);
         }
     },
+
+
+
+
   },
   mutations: {
     SET_PRODUK(state, produk) {
@@ -45,6 +50,9 @@ const produk = {
     },
     SET_SINGLE_PRODUK(state, produk) { 
         state.singleProduk = produk;
+      },
+     ADD_KERANJANG(state, keranjang) { 
+        state.keranjang = keranjang;
       },
   },
 };

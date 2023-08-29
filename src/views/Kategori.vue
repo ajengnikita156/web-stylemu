@@ -1,5 +1,7 @@
 <template>
     <div class="mt-20 text-center">
+      <br><br><br>
+
       <span class="font-bold text-4xl">All KATEGORI</span>
     </div>
     <div class="grid grid-cols-4 gap-3 mt-5">
@@ -17,6 +19,9 @@
     </div>
     
     </div>
+    <br><br><br>
+    <br><br>
+
     <!--Footer container-->
 <footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600">
   <div class="container pt-9">
@@ -107,12 +112,27 @@
       export default{
           computed: {
               ...mapGetters('kategori', ['getKategori']),
+              ...mapGetters('product', ['getProduk']),
+
           },
           methods: {
-              ...mapActions('kategori', ['fetchKategori'])
+              ...mapActions('kategori', ['fetchKategori']),
+              ...mapActions('product', ['fetchProduk']),
+
+...mapActions('keranjang', ["fetchKeranjang"]),
+              
           },
           created() {
               this.fetchKategori();
           },
+          beforeMount(){
+           this.fetchKeranjang();
+         },
+         mounted() {
+    this.fetchProduk()
+  }
+
       }
       </script>
+
+      

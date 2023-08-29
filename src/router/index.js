@@ -58,6 +58,12 @@ const routes = [
     component: Checkout,
   },
   {
+    path: "/checkout/:order_code",
+    name: "SuccessOrderCode",
+    component: Checkout,
+    props:true
+  },
+  {
     path: "/contact",
     name: "Contact",
     component: Contact,

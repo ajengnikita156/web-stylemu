@@ -1,73 +1,22 @@
 <template>
-<div>
+<div  style=" margin-top: 60px;">
 
     <div class="header  flex items-center">
         <div class="container mx-auto px-4">
             <div class="header-box flex lg:flex-row flex-col items-center gap-10">
                 <div class="box lg:w-1/2 lg:order-1 order-2 lg:text-left text-center"><br>
-                    <h1 class="font-extrabold md:text-4xl sm:text-3xl text-2xl text-slate-900 mb-4">Style.mu  collection</h1>
-                    <p class="mb-4 text-slate-600 md:text-base sm:text-sm text-xs ">Menjual Berbagai Kebutuhan Style Anda</p>
-                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-    <div class="relative">
-        
-        <button type="button" style="width: 150px; height: 45px;" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Started</button>
-                    </div>
+                    <h1 class="font-extrabold md:text-6xl sm:text-3xl text-2xl text-slate-900 mb-4">Style.mu  collection</h1>
+                  <center><p class="mb-5 text-slate-800 md:text-base sm:text-sm text-xs ">Menjual Berbagai Kebutuhan Style Anda</p></center>
+    
                     
                 </div>
-                    <img src="../assets/img/banner.avif" class="xl:w-[600px] lg:w-[400px] md:w-[300px] sm:w-[250px] w-[200px] block ml-auto" style="width: 500px; height: 500px;">
+                    <img src="../assets/img/banner.avif" class="xl:w-[600px] lg:w-[400px] md:w-[300px] sm:w-[250px] w-[200px] block ml-auto" style="width: 500px; height: 500px; margin-top: 20px;">
              
             </div>
         </div>
     </div><br><br>
 
-  
-    </div>
-<!-- <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">We invest in the world’s potential</h1>
-        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-           
-        </div>
-    </div>
-</section> -->
-
-<!-- 
- gallery 3 -->
-<!-- <div class="grid grid-cols-5 gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px; margin: 10px;" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px;" src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px;" src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="">
-        </div>
-       
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px;" src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="">
-        </div>
-    </div> -->
-
-    <!-- gallery 4-->
-<!-- <div class="grid grid-cols-5 gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px; margin: 10px;" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px;" src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px;" src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" style="width: 200px; height: 200px;" src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" alt="">
-        </div>
-       
-    </div>  -->
-
-<!--Footer container-->
+      <!--Footer container-->
 <footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600">
   <div class="container pt-9">
     <div class="mb-9 flex justify-center">
@@ -147,5 +96,29 @@
     >
   </div>
 </footer>
+    </div>
 
+    
 </template>
+
+<script>
+import { mapGetters, mapActions } from 'vuex';
+  
+  export default {
+      computed: {
+        ...mapGetters('product', ['getProduk']),
+      },
+      methods: {
+        ...mapActions('product', ['fetchProduk']),
+
+        ...mapActions('keranjang', ["fetchKeranjang"]),
+  },
+  beforeMount(){
+    this.fetchKeranjang();
+  },
+
+  mounted() {
+    this.fetchProduk()
+  }
+}
+</script>

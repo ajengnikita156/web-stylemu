@@ -1,13 +1,15 @@
 <template>
-  <div v-if="getProduk == undefined">........................</div>
+  <div  style="margin-top: 60px;"  v-if="getProduk == undefined">........................  </div>
   <div v-else>
+
+    <br><br>
   <div class="grid md:grid-cols-3 gap-8  mt-10 pl-5">
       <div  v-for="product in getProduk.slice(0,)" :key="product.id">
           
       <div class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-gray shadow-md">
           <a href="#">
               <img class="h-50 rounded-t-lg object-cover"
-                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cc0a35b0-b3b8-427c-bf2c-334e0c4beeca/sb-logo-skate-t-shirt-LBBxZV.png"
+                  src="https://i.pinimg.com/236x/a4/27/63/a427633b708edc49c3cec523ad110058.jpg" style="width: 400px;"
                   alt="product image" />
           </a>
           <span
@@ -72,7 +74,6 @@
 </div>
 </div>
 
-</div><!--Footer container-->
 <footer class="bg-neutral-200 text-center text-white dark:bg-neutral-600">
   <div class="container pt-9">
     <div class="mb-9 flex justify-center">
@@ -153,19 +154,27 @@
   </div>
 </footer>
 
+</div>
+
 </template>
 <script>
 import { mapGetters, mapActions } from 'vuex';
   
   export default {
       computed: {
-          ...mapGetters('product', ['getProduk']),
+        ...mapGetters('product', ['getProduk']),
       },
       methods: {
-          ...mapActions('product', ['fetchProduk']),
+        ...mapActions('product', ['fetchProduk']),
+
+        ...mapActions('keranjang', ["fetchKeranjang"]),
   },
-  created(){
-      this.fetchProduk();
+  beforeMount(){
+    this.fetchKeranjang();
+  },
+
+  mounted() {
+    this.fetchProduk()
   }
 }
 </script>
