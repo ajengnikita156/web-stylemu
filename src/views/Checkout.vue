@@ -121,7 +121,7 @@
             <td class="border-b border-gray-200 bg-white px-5 py-5 text-sm">
               <div class="flex items-center">
                 <div class="h-10 w-10 flex-shrink-0">
-                  <img class="h-full w-full rounded-full" src="https://img.freepik.com/free-psd/super-offer-sale-banner-with-editable-text-template-3d-render_47987-12749.jpg?w=740&t=st=1693270432~exp=1693271032~hmac=cd6f0b28ae3ff4f813a3b7bbd3dabbb9c408ed84af1a3bfb03224a5f9a2f6a49" alt="" />
+                  <img class="h-full w-full rounded-full" src="https://i.pinimg.com/236x/a4/27/63/a427633b708edc49c3cec523ad110058.jpg" alt="" />
                 </div>
                 <div class="ml-3">
                   <p class="whitespace-no-wrap">{{cart.name}}</p>
