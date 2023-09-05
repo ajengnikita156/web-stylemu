@@ -94,7 +94,7 @@ const keranjang = {
         console.log(error);
       }
     },
-    async editqty({ commit, dispatch }, data) {
+    async editqty({ commit, dispatch }, data){
       try {
         const response = axios.post(
           "https://ecommerce.olipiskandar.com/api/v1/carts/change-quantity",

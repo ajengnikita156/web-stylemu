@@ -208,6 +208,95 @@
                                 </a>
                             </nav>
                         </div>
+                        <div class="mx-auto max-w-6xl mt-10 justify-center px-6 md:flex md:space-x-6 xl:px-0">
+            <div class="rounded-lg md:w-1/3">
+                <div class="flex w-full flex-col">
+                    <div class="ml-32">
+                        <div class="my-4 rounded-xl  sm:my-0 sm:ml-auto">
+                            <div class="flex h-16 items-center text-4xl font-bold ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-yellow-300"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                4.9
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="text-sm ml-28 mb-3 text-gray-500">96% of buyers are satisfied</p>
+                    <div class="text-gray-700">
+                        <p class="font-medium">1,929 ratings • 729 reviews</p>
+                        <ul class="mb-6 mt-2 space-y-2">
+                            <li class="flex items-center text-sm font-medium">
+                                <span class="w-3">5</span><span class="mr-4 text-yellow-300"><svg
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg></span>
+                                <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                                    <div class="h-full w-10/12 bg-yellow-300"></div>
+                                </div>
+                                <span class="w-3">1.870</span>
+                            </li>
+                            <li class="flex items-center text-sm font-medium">
+                                <span class="w-3">4</span><span class="mr-4 text-yellow-300"><svg
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg></span>
+                                <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                                    <div class="h-full w-8/12 bg-yellow-300"></div>
+                                </div>
+                                <span class="w-3">140</span>
+                            </li>
+                            <li class="flex items-center text-sm font-medium">
+                                <span class="w-3">3</span><span class="mr-4 text-yellow-300"><svg
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg></span>
+                                <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                                    <div class="h-full w-1/12 bg-yellow-300"></div>
+                                </div>
+                                <span class="w-3">30</span>
+                            </li>
+                            <li class="flex items-center text-sm font-medium">
+                                <span class="w-3">2</span><span class="mr-4 text-yellow-300"><svg
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg></span>
+                                <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                                    <div class="h-full w-0 bg-yellow-300"></div>
+                                </div>
+                                <span class="w-3">12</span>
+                            </li>
+                            <li class="flex items-center text-sm font-medium">
+                                <span class="w-3">1</span><span class="mr-4 text-yellow-300"><svg
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg></span>
+                                <div class="mr-4 h-2 w-96 overflow-hidden rounded-full bg-gray-300">
+                                    <div class="h-full w-1/12 bg-yellow-300"></div>
+                                </div>
+                                <span class="w-3">20</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <button class="w-36 rounded-full bg-blue-900 py-3 text-white font-medium">Write a review</button> -->
+                </div>
+            </div>
+            <div class="mt-6 h-full ml-4 md:mt-0 md:w-2/3">
+                <RatingReviewComponent />
+            </div>
+        </div>
   
                         <div class="mt-8 flow-root sm:mt-12">
                             <!-- <p class="mt-4">{{ product.description }}</p> -->
@@ -225,8 +314,12 @@
   
   <script>
   import { mapGetters, mapActions} from "vuex";
-  
+  import RatingReviewComponent from "../components/RatingReviewComponent.vue";
+
   export default {
+    components: {
+        RatingReviewComponent
+    },
     data() {
         return{
             token: null
